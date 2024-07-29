@@ -13,17 +13,16 @@ type TabIconProps = {
 
 const TabIcon: React.FC<TabIconProps> = ({ icon, color, name, focused }) => {
   return (
-    <View className='items-center justify-center gap-2'>
+    <View className='items-center justify-center mt-5'>
         <Image 
           source={icon}
           resizeMode="contain"
           tintColor={color}
-          className="w-6 h-6"
+          className="w-9 h-9"
         />
-        <Text className={`${focused ? "font-psemibold" : "font-pregular"} text-xs`}
-        style={{ color: color }}>
-          {name}
-        </Text>
+        {/* <Text className={`${focused ? "font-psemibold" : "font-pregular"} text-xs`}
+        style={{ color: color }}>         
+        </Text> */}
     </View>
   )
 }
@@ -34,14 +33,17 @@ const TabsLayout = () => {
       <Tabs 
           screenOptions={{ 
             tabBarShowLabel: false,
-            tabBarActiveTintColor: '#FFA001',
-            tabBarInactiveTintColor: '#CDCDE0',
+            tabBarActiveTintColor: '#809E29',
+            tabBarInactiveTintColor: '#252526',
             tabBarStyle: {
-              backgroundColor: '#161622',
-              borderTopWidth: 1,
-              borderTopColor: '#232533',
-              height: 84,
-            }
+              height: 90,
+              borderWidth: 2,
+              borderTopWidth: 2,
+              borderRadius: 15,
+              borderColor: '#000',
+              borderTopColor: '#000',
+              backgroundColor: '#DDF5FB',
+              },
           }}>
           <Tabs.Screen name="home"
           options={{
@@ -77,7 +79,7 @@ const TabsLayout = () => {
             headerShown: false,
             tabBarIcon: ({ color, focused }) => (
               <TabIcon 
-                icon={icons.plus}
+                icon={icons.explore}
                 color={color}
                 name="Create"
                 focused={focused}
