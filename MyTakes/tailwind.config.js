@@ -4,11 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#536814",
+        primary: "#425115",
         secondary: {
           DEFAULT: "#FF9C01",
           100: "#FF9001",
           200: "#FF8E01",
+          300: "#809E29",
         },
         pond: {
           DEFAULT: '#DDF5FB',

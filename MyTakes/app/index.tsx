@@ -10,15 +10,11 @@ export default function Index() {
     <SafeAreaView className="bg-primary h-full">
       <ScrollView contentContainerStyle={{ height: '100%'}}>
         <View className="w-full items-center h-full px-4 justify-center">
-
-
-
-
           <View className="bg-pond w-[358px] h-[453px] rounded-2xl justify-center items-center">
           <Text className="text-3xl text-pond-100 font-oregular text-center mt-10"> Simply gotta write it down</Text>
             <View className="mt-5">
             <CustomButton 
-              title="Sign in with password"
+              title="Continue with Email"
               handlePress={() => { router.push('/sign-in'); } }
               containerStyles="w-[334px] min-h-[53px]" 
               textStyles="" 

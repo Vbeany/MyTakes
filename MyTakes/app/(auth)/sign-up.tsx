@@ -38,37 +38,42 @@ const SignUp = () => {
   return (
     <SafeAreaView className="bg-primary h-full">
       <ScrollView> 
-        <View className="w-full justify-center min-h-[85vh] px-4 my-6">
-          <Image source={images.logo} resizeMode='contain' className="w-[115px] h-[35px]"/>
-          <Text className="text-2xl text-white text-semibold mt-10 font-psemibold">Sign up to Aora</Text>
+        <View className="w-full justify-center items-center min-h-[85vh] px-4 my-6">
+        <Image source={images.logo1} resizeMode='contain' className="max-w-[380px] w-full h-[125px]"/>
           
           <FormField 
             title="Username"
             value={form.username}
             handleChangeText={(e: any) => setForm({ ...form, username: e })}
-            otherStyles="mt-10" placeholder={undefined}          />
+            otherStyles="mt-10" 
+            placeholder="Unique username"
+            />
           <FormField 
             title="Email"
             value={form.email}
             handleChangeText={(e: any) => setForm({ ...form, email: e })}
             otherStyles="mt-7"
-            keyboardType="email-address" placeholder={undefined}          />
+            keyboardType="email-address" 
+            placeholder="e.g Mytakes@gmail.com"
+            />
           <FormField 
             title="Password"
             value={form.password}
             handleChangeText={(e: any) => setForm({ ...form, password: e })}
-            otherStyles="mt-7" placeholder={undefined}          />
+            otherStyles="mt-7" 
+            placeholder="Password"
+            />
 
           <CustomButton 
             title="Sign Up"
             handlePress={submit}
-            containerStyles="mt-7"
+            containerStyles="w-[334px] min-h-[53px] mt-7"
             isLoading={isSubmitting} textStyles={undefined}          />
           <View className="justify-center pt-5 flex-row gap-2">
             <Text className="text-base text-gray-100 font-pregular">
               Have an account already?
             </Text>
-            <Link href="/sign-in" className="text-base font-psemibold text-secondary">Login</Link>
+            <Link href="/sign-in" className="text-base font-psemibold text-pond-200">Login</Link>
           </View>
         </View>
       </ScrollView>
