@@ -15,6 +15,7 @@ export default function RootLayout() {
     "Poppins-Regular": require("../assets/fonts/Poppins-Regular.ttf"),
     "Poppins-SemiBold": require("../assets/fonts/Poppins-SemiBold.ttf"),
     "Poppins-Thin": require("../assets/fonts/Poppins-Thin.ttf"),
+    "OrelegaOne-Regular": require("../assets/fonts/OrelegaOne-Regular.ttf"),
   });
 
   useEffect(() => {

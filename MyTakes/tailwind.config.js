@@ -4,11 +4,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#161622",
+        primary: "#536814",
         secondary: {
           DEFAULT: "#FF9C01",
           100: "#FF9001",
           200: "#FF8E01",
+        },
+        pond: {
+          DEFAULT: '#DDF5FB',
+          100: "#88684D",
+          200:"#DFF4A2",
+          300:"#5DA2B4",
         },
         black: {
           DEFAULT: "#000",
@@ -16,7 +22,7 @@ module.exports = {
           200: "#232533",
         },
         gray: {
-          100: "#CDCDE0",
+          100: "#D6D6D6",
         },
       },
       fontFamily: {
@@ -29,6 +35,7 @@ module.exports = {
         pbold: ["Poppins-Bold", "sans-serif"],
         pextrabold: ["Poppins-ExtraBold", "sans-serif"],
         pblack: ["Poppins-Black", "sans-serif"],
+        oregular: ["OrelegaOne-Regular", "sans-serif"],
       },
     },
   },
