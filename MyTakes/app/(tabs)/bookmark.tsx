@@ -3,28 +3,30 @@ import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { images } from '@/constants'
 import { StatusBar } from 'expo-status-bar'
+import CreateCard from '@/components/CreateCard'
+import InfoCard from '@/components/InfoCard'
 
 const Bookmark = () => {
   return (
-    <SafeAreaView className='bg-gray-200 h-full'>
+    <SafeAreaView className='bg-gray-200 h-full' edges={['top', 'left', 'right']}>
       <ScrollView>
-      <View className='justify-center items-center mt-10'>
-        <Image 
-          source={images.iconNoho}
-        />
-      </View>
-
-      <View>
-        <Text className='font-oregular text-2xl ml-5 mt-5'>Last place you went to..</Text>
-        <View className='bg-pond-200 w-[347px] h-[139px] ml-5 mt-5 rounded-[21px]'></View>
-      </View>
-
-      <View>
-        <Text className='font-oregular text-2xl ml-5 mt-5'>Recs of the Day!</Text>
-        <Text className='font-pregular text-sm ml-5 mt-1 text-pond-300'>No plans today? Don't worry I've gotchu!</Text>
-        <View className='bg-pond-200 w-[347px] h-[139px] ml-5 mt-5 rounded-[21px]'></View>
-      </View>
-      <StatusBar backgroundColor="#161622" style="dark"/>
+        <View className='items-center justify-center'>
+          <View>
+            <CreateCard 
+            name="Restaurant Name" 
+            location="Location"
+            image={undefined}            
+            />
+          </View>
+          <View>
+            <Text>Properties</Text>
+          </View>
+          <View>
+            <InfoCard
+            
+            />
+          </View>
+        </View>
       </ScrollView>
     </SafeAreaView>
   )

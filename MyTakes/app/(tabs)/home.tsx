@@ -7,7 +7,7 @@ import { images } from '../../constants'
 
 const Home = () => {
   return (
-    <SafeAreaView className='bg-gray-200 h-full'>
+    <SafeAreaView className='bg-gray-200 h-full' edges={['top', 'left', 'right']}>
       <ScrollView>
       <View className='justify-center items-center mt-10'>
         <Image 

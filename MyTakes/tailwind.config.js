@@ -9,7 +9,6 @@ module.exports = {
           DEFAULT: "#FF9C01",
           100: "#FF9001",
           200: "#FF8E01",
-          300: "#809E29",
         },
         pond: {
           DEFAULT: '#DDF5FB',
@@ -28,6 +27,8 @@ module.exports = {
         },
         green: {
           DEFAULT: "#536814",
+          100: "#809E29",
+          200: "#B3D846",
         }
       },
       fontFamily: {

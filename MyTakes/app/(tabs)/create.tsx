@@ -17,25 +17,29 @@ const Create = () => {
       </View>
       <View>
         <ReviewCard 
-          name="The Crus-Z Family"
-          location="New York City"
-          score="4.5"
-        />
+            name="The Crus-Z Family"
+            location="New York City"
+            score="4.5" 
+            image={undefined}        
+            />
         <ReviewCard 
-          name="Taste of Chicago"
-          location="Chicago"
-          score="4.5"
-        />     
+            name="Taste of Chicago"
+            location="Chicago"
+            score="4.5" 
+            image={undefined}        
+            />     
         <ReviewCard 
-          name="Sploto"
-          location="New York City"
-          score="4.5"
-        />  
+            name="Sploto"
+            location="New York City"
+            score="4.5" 
+            image={undefined}        
+            />  
         <ReviewCard 
-          name="The Crus-Z Family"
-          location="New York City"
-          score="4.5"
-        />     
+            name="The Crus-Z Family"
+            location="New York City"
+            score="4.5" 
+            image={undefined}        
+            />     
       </View>
       <StatusBar backgroundColor="#161622" style="dark"/>
       </ScrollView>

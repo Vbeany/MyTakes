@@ -18,7 +18,6 @@ const ReviewCard: React.FC<ReviewCardProps> = ({name, location, score, image}) =
       </View>
         <Text className='mr-3 text-[18px] font-psemibold'>{score}</Text>
       </View>
-      
     </View>
   )
 }
