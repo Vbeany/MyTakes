@@ -3,10 +3,14 @@
   "compilerOptions": {
     "strict": true,
     "useUnknownInCatchVariables": false,
+    "typeRoots": ["node_modules/@types"],
+    "esModuleInterop": true,
+
     "paths": {
       "@/*": [
         "./*"
-      ]
+      ],
+      "@firebase/auth": ["./node_modules/@firebase/auth/dist/index.rn.d.ts"],
     }
   },
   "include": [

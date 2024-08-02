@@ -4,8 +4,32 @@ import { Image, ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import CustomButton from "@/components/CustomButton";
 import { images } from '../constants'
+import { useEffect, useState } from "react";
+import { onAuthStateChanged, User } from "firebase/auth";
+import { FIREBASE_AUTH } from "@/FirebaseConfig";
 
 export default function Index() {
+
+  const [user, setUser] = useState<User | null>(null);
+  const [initializing, setInitializing] = useState(true);
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(FIREBASE_AUTH, (user) => {
+      console.log('user', user);
+      setUser(user);
+      setInitializing(false);
+    });
+    return unsubscribe; // Unsubscribe on unmount
+  }, []);
+
+  useEffect(() => {
+    if (!initializing) {
+      if (user) {
+        router.replace("/home"); // Navigate to home if user is logged in
+      }
+    }
+  }, [initializing, user]);
+
   return (
     <SafeAreaView className="bg-primary h-full">
       <ScrollView contentContainerStyle={{ height: '100%'}}>

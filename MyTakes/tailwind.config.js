@@ -26,6 +26,9 @@ module.exports = {
           100: "#D6D6D6",
           200:"#FFFFFF",
         },
+        green: {
+          DEFAULT: "#536814",
+        }
       },
       fontFamily: {
         pthin: ["Poppins-Thin", "sans-serif"],
@@ -38,6 +41,9 @@ module.exports = {
         pextrabold: ["Poppins-ExtraBold", "sans-serif"],
         pblack: ["Poppins-Black", "sans-serif"],
         oregular: ["OrelegaOne-Regular", "sans-serif"],
+      },
+      borderRadius: {
+        'custom': '20px', // Define your custom radius here
       },
     },
   },
