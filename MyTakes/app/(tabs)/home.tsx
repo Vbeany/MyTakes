@@ -3,7 +3,7 @@ import React from 'react'
 import { StatusBar } from 'expo-status-bar'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { images } from '../../constants'
-
+import RestaurantImages from '@/components/RestaurantImages'
 
 const Home = () => {
   return (

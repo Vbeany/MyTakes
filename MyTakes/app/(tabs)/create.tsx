@@ -6,6 +6,11 @@ import { images } from '../../constants'
 import ReviewCard from "@/components/ReviewCard";
 
 const Create = () => {
+
+  const submit = () => {
+    console.log("Card Clicked!")
+  }
+
   return (
     <SafeAreaView className='bg-pond h-full items-center' edges={['top', 'left', 'right']}>
       <ScrollView>
@@ -19,26 +24,30 @@ const Create = () => {
         <ReviewCard 
             name="The Crus-Z Family"
             location="New York City"
-            score="4.5" 
-            image={undefined}        
+            score="4.5"
+            image={undefined} 
+            handlePress={submit}            
             />
         <ReviewCard 
             name="Taste of Chicago"
             location="Chicago"
-            score="4.5" 
-            image={undefined}        
+            score="4.5"
+            image={undefined} 
+            handlePress={submit}            
             />     
         <ReviewCard 
             name="Sploto"
             location="New York City"
-            score="4.5" 
-            image={undefined}        
+            score="4.5"
+            image={undefined} 
+            handlePress={submit}            
             />  
         <ReviewCard 
             name="The Crus-Z Family"
             location="New York City"
-            score="4.5" 
-            image={undefined}        
+            score="4.5"
+            image={undefined} 
+            handlePress={submit}            
             />     
       </View>
       <StatusBar backgroundColor="#161622" style="dark"/>
